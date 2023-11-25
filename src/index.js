@@ -34,7 +34,7 @@ const app = express()
         })
         app.get("/",(req,res)=>{
             res.send("Hello Express");
-            // hi
+            // hi its normal routing
 
         })
         app.get("/about",(req,res)=>{
