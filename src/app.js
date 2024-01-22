@@ -14,5 +14,11 @@ app.use(express.urlencoded({extended:true,limit:'16kb'}))
 app.use(express.static("public"))//when we get pdf or any file like image it will store in public folder.
 app.use(cookieParser())
 
+import userRouter from "./routes/user.router.js"
+
+//routes declaration
+
+app.use("/users",userRouter);
+
 // app.get('/', (req, res) => {})
 export { app }
